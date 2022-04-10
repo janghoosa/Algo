@@ -25,7 +25,7 @@ int main() {
             if (A[i] >= i)
                 dp[i] = 1;
             else
-                dp[i] = dp[i - A[i] - 1] + 1;
+                dp[i] = dp[i - A[i] - 1] + 1; 
         }
         if (ans < dp[i]) {
             ans = max(ans, dp[i]);
