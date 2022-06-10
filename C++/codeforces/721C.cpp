@@ -1,5 +1,3 @@
-// 10번에서 오류남... 왜?
-
 #include <iostream>
 #include <vector>
 #include <cstring>
@@ -49,7 +47,7 @@ int main() {
         tmp.a = A;
         G[A].push_back(tmp);
     };
-    memset(dp, 1000000005, sizeof(dp));
+    memset(dp,0x3f3f3f3f, sizeof(dp));
     memset(visit, 0, sizeof(visit));
     visit[n] = 1;
     dp[n][1] = 0;
