@@ -5,7 +5,6 @@ A = [input() for _ in range(N)]
 def check(x):
     pointer1 = 0
     pointer2 = len(x)-1
-    res = 0
     if x == x[::-1]:
         return 0
     while pointer1 < pointer2:
