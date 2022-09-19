@@ -8,7 +8,6 @@ for _ in range(T):
     A = list(map(int, input().split()))
     flag = False
     ans = [0 for _ in range(n)]
-    visited = [0 for _ in range(n+1)]
     ans[-1] = A[-1]+1
     used = [A[-1]+1]
     for i in range(n-2, -1, -1):
